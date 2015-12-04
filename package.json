@@ -1,0 +1,31 @@
+{
+  "name": "pixsy-login",
+  "version": "1.0.0",
+  "description": "This is a test dive for Pixsy",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "bower": "^1.6.8",
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "node-jsx": "^0.13.3",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "react-tools": "^0.13.3",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Uri Yacobi Keller",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/urihamster/Pixsy-Test-Dive---Uri-Yacobi-Keller.git"
+  },
+  "bugs": {
+    "url": "https://github.com/urihamster/Pixsy-Test-Dive---Uri-Yacobi-Keller/issues"
+  },
+  "homepage": "https://github.com/urihamster/Pixsy-Test-Dive---Uri-Yacobi-Keller#readme"
+}

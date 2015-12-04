@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css" />
+
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+
+<div class='container'>
+
+	<%- loginOutput %>
+
+</div>
+
+<script>
+
+$( "#login-form" ).submit(function( event ) {
+		
+	event.preventDefault();
+
+	var email = $('#email-field').val();
+	var password = $('#password-field').val();
+
+	var email_form = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+	
+	if (email_form.test(email) && (password.length>=5))
+	{
+		$.post('',{email,password}, function(message){
+			$('#status').html(message);
+		});
+	}
+	else
+	{
+		$('#status').html('Nope. No way that this is your password and email address');
+	}
+
+});
+
+</script>
+
+
